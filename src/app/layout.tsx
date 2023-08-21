@@ -3,6 +3,8 @@ import * as React from 'react';
 
 import '@/styles/globals.css';
 
+import Navbar from '@/components/Navbar';
+
 import { siteConfig } from '@/constant/config';
 
 export const metadata: Metadata = {
@@ -51,7 +53,10 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
