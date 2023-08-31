@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div
       className='
-    bg-base-100 text-base-content fixed top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur 
+    bg-base-100 text-base-content top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur 
     transition-all duration-100
     '
     >

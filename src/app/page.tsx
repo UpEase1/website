@@ -4,8 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Head from 'next/head';
 import * as React from 'react';
 
-import AmsPlatform from '@/app/AmsPlatform';
-import StudentApp from '@/app/StudentApp';
+import Test from '@/app/sections/sla-section'
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -107,19 +106,19 @@ export default function HomePage() {
       <Head>
         <title>Hi</title>
       </Head>
-      <section className=''>
+      <section>
         <Hero />
       </section>
-
       <div className='spacer' style={{ height: '100vh' }}></div>
-      <section className=' bg-black '>
+      <section className='bg-black '>
         <Introduction />
       </section>
-      <section className='h-screen  bg-black'>
-        <StudentApp />
+      <section className='bg-black'>
+        {/* <StudentApp /> */}
+        <Test />
       </section>
-      <section className='h-screen  bg-black'>
-        <AmsPlatform />
+      <section className='bg-black'>
+        {/* <AmsPlatform /> */}
       </section>
     </main>
   );

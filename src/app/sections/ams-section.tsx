@@ -8,13 +8,12 @@ import timetable from '../../public/images/timetable.png';
 const StudentApp: React.FC = () => {
   return (
     <div className='flex h-[85%] px-4'>
-      <div className='h-srceen my-auto flex w-1/3 justify-center'>
+      <div className='h-full my-auto flex w-1/3 justify-center'>
         <NextImage
           src={Phone}
           alt='phone display'
           layout='responsive'
-          width='400'
-          height='300'
+          className='w'
         />
       </div>
 
