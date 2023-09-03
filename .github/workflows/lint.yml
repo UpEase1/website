@@ -22,10 +22,16 @@ jobs:
         with:
           node-version: 18
 
-      - name: 📥 Download deps
-        uses: u0reo/npm-install@fix/restore-failure
+      # - name: 📥 Download deps
+      #   uses: u0reo/npm-install@fix/restore-failure
+      #   with:
+      #     useRollingCache: true
+      - name: Run install
+        uses: borales/actions-yarn@v4
         with:
-          useRollingCache: true
+          cmd: install # will run `yarn install` command
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # if needed
 
       - name: 🔬 Lint
         run: yarn lint:strict
