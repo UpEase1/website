@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 import NextImage from '@/components/NextImage';
@@ -9,7 +10,7 @@ const StudentApp: React.FC = () => {
   return (
     <div className='flex h-[85%] px-4'>
       <div className='h-full my-auto flex w-1/3 justify-center'>
-        <NextImage
+        <Image
           src={Phone}
           alt='phone display'
           layout='responsive'
