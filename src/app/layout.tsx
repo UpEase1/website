@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import localFont from 'next/font/local'
 import * as React from 'react';
 
 import '@/styles/globals.css';
@@ -6,6 +7,11 @@ import '@/styles/globals.css';
 import Navbar from '@/components/Navbar';
 
 import { siteConfig } from '@/constant/config';
+
+const fontSatoshi = localFont({
+  src: 'Satoshi-Variable.woff2',
+  variable: '--font-satoshi',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -53,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>
+      <body className={`${fontSatoshi.variable}`}>
         <Navbar />
         {children}
       </body>
