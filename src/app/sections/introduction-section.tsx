@@ -21,10 +21,10 @@ export default function Introduction() {
       ref={targetRef}
       className='mb-[-300px] flex h-full min-h-screen flex-col items-center bg-black'
     >
-      <div className='flex flex-1 items-center text-3xl font-medium text-[#D4B9B9] '>
+      <div className='flex flex-1 items-center text-xl sm:text-3xl md:text-4xl font-medium text-[#D4B9B9] '>
         <p>Introducing</p>
       </div>
-      <h1 className='h-100 w-3/4 flex-1 px-5 text-center text-8xl text-white'>
+      <h1 className='h-100 w-3/4 flex-1 px-5 text-center text-4xl sm:text-6xl md:text-8xl  text-white'>
         Student Lifecycle Management
       </h1>
     </motion.section>

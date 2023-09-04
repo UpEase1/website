@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 export default function Contact() {
   return (
     <div className='flex min-h-screen flex-col'>
-      <div className='layout flex flex-1 justify-between'>
+      <div className='layout flex flex-col lg:flex-row flex-1 justify-between'>
         <div>
           <h1 className='mt-64 text-center text-5xl '>
             Let's{' '}

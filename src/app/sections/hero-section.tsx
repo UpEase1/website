@@ -15,7 +15,7 @@ export default function Hero() {
   const translateY = useTransform(scrollYProgress, [0, 0.5], [0, -100]);
 
   return (
-    <motion.section
+    <motion.div
       ref={targetRef}
       initial={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.3 }}
@@ -32,11 +32,11 @@ export default function Hero() {
     >
       <div className='layout flex min-h-screen flex-col items-center justify-center py-12 text-center'>
         {/* <Logo className='w-16' /> */}
-        <p className='mt-4 max-w-3xl text-6xl font-medium'>
+        <p className='mt-4 max-w-3xl text-5xl md:text-6xl font-medium'>
           Data driven solutions to empower {TextPrimary('educators')}, engage{' '}
           {TextPrimary('students')} and bring {TextPrimary('intelligence')}!
         </p>
       </div>
-    </motion.section>
+    </motion.div>
   );
 }

@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <main className='z-0 snap-y snap-mandatory '>
       <Head>
-        <title>Hi</title>
+        <title>UpEase</title>
       </Head>
       <section>
         <Hero />
@@ -34,7 +34,9 @@ export default function HomePage() {
         {/* <StudentApp /> */}
         <Test />
       </section>
-      <section className='bg-black'>{/* <AmsPlatform /> */}</section>
+      <section className='bg-black'>
+        {/* <AmsPlatform /> */}
+      </section>
       <section className='bg-gradient-to-b from-[#F2F2F2] to-white '>
         MAKE THIS FUL SCREEN
         <Pricing />
