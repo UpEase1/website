@@ -6,9 +6,9 @@ const Pricing: React.FC = () => {
     <div className='text-black min-h-screen flex flex-col justify-center'>
       <h1 className='mb-14 text-6xl font-medium text-center'>A plan that fits your college needs </h1>
       <div className='my-14 flex justify-around px-5'>
-        <div className='h-[560px] w-80 cursor-pointer rounded-2xl shadow-2xl duration-500 hover:scale-105 '>
-          <div className='h-1/2 bg-white'>
-            <h3 className='mt-4 p-4 text-center text-2xl text-[#0A49D6]'>
+        <div className='h-[560px] w-80 cursor-pointer shadow-2xl duration-500 hover:scale-105 '>
+          <div className='h-1/2 rounded-2xl bg-white'>
+            <h3 className=' p-4 text-center text-2xl text-[#0A49D6]'>
               Pre-Intelligence Tier
             </h3>
             <p className='ml-2 mt-10 p-2'>
@@ -16,7 +16,7 @@ const Pricing: React.FC = () => {
               <span className=' text-7xl font-normal'>499</span> /Student/year
             </p>
           </div>
-          <div className='flex h-1/2 bg-[#F2F2F2]'>
+          <div className='flex h-1/2 rounded-2xl bg-[#F2F2F2]'>
             <ul className=' mt-2 h-full flex-col justify-around gap-12 p-4 font-normal'>
               <li className='flex gap-4 py-1'>
                 <svg
@@ -103,8 +103,8 @@ const Pricing: React.FC = () => {
         </div>
 
         <div className='h-[560px] w-80 cursor-pointer rounded-2xl shadow-2xl duration-500 hover:scale-105 '>
-          <div className='h-1/2 bg-white'>
-            <h3 className='mt-4 p-4 text-center text-2xl text-[#0A49D6]'>
+          <div className='h-1/2 rounded-2xl  bg-white'>
+            <h3 className='p-4 text-center text-2xl text-[#0A49D6]'>
               Intelligence Tier
             </h3>
             <p className='ml-2 mt-10 p-2'>
@@ -112,7 +112,7 @@ const Pricing: React.FC = () => {
               <span className=' text-7xl font-normal'>499</span> /Student/year
             </p>
           </div>
-          <div className='flex h-1/2 bg-[#F2F2F2]'>
+          <div className='flex h-1/2 rounded-2xl  bg-[#F2F2F2]'>
             <ul className=' mt-2 h-full flex-col justify-around gap-12 p-4 font-normal'>
               <li className='flex gap-4 py-1'>
                 <svg
@@ -183,8 +183,8 @@ const Pricing: React.FC = () => {
         </div>
 
         <div className='h-[560px] w-80 cursor-pointer rounded-2xl shadow-2xl duration-500 hover:scale-105 '>
-          <div className='h-1/2 bg-white'>
-            <h3 className='mt-4 p-4  text-center text-2xl text-[#0A49D6]'>
+          <div className='h-1/2 rounded-2xl  bg-white'>
+            <h3 className=' p-4  text-center text-2xl text-[#0A49D6]'>
               Enterprise Tier
             </h3>
             <p className='ml-2 mt-10 p-2'>
@@ -192,7 +192,7 @@ const Pricing: React.FC = () => {
               <span className=' text-7xl font-normal'>499</span> /Student/year
             </p>
           </div>
-          <div className='flex h-1/2 bg-[#F2F2F2]'>
+          <div className='flex h-1/2 rounded-2xl  bg-[#F2F2F2]'>
             <ul className=' mt-2 h-full flex-col justify-around gap-12 p-4 font-normal'>
               <li className='flex gap-4 py-1'>
                 <svg

@@ -36,7 +36,6 @@ export default function HomePage() {
       </section>
       <section className='bg-black'>{/* <AmsPlatform /> */}</section>
       <section className='bg-gradient-to-b from-[#F2F2F2] to-white '>
-        MAKE THIS FUL SCREEN
         <Pricing />
       </section>
       <section className='bg-white'>
