@@ -3,11 +3,13 @@
 import Head from 'next/head';
 import * as React from 'react';
 
+import AmsPlatform from '@/app/sections/ams-section';
 import Contact from '@/app/sections/contact-section';
 import Hero from '@/app/sections/hero-section';
-import Introduction from '@/app/sections/introduction-section';
+import IntroductionAms from '@/app/sections/introduction-ams-section';
+import IntroductionSla from '@/app/sections/introduction-sla-section';
 import Pricing from '@/app/sections/pricing-section';
-import Test from '@/app/sections/sla-section';
+import StudentApp from '@/app/sections/sla-section';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -28,14 +30,16 @@ export default function HomePage() {
       </section>
       <div className='spacer' style={{ height: '100vh' }}></div>
       <section className='bg-black '>
-        <Introduction />
+        <IntroductionSla />
       </section>
       <section className='bg-black'>
-        {/* <StudentApp /> */}
-        <Test />
+        <StudentApp />
+      </section>
+      <section className='bg-black '>
+        <IntroductionAms />
       </section>
       <section className='bg-black'>
-        {/* <AmsPlatform /> */}
+        <AmsPlatform />
       </section>
       <section className='bg-gradient-to-b from-[#F2F2F2] to-white '>
         <Pricing />

@@ -1,49 +1,68 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from 'next/image'
+import React from 'react'
 
-import NextImage from '@/components/NextImage';
+import styles from '@/styles/ams-section.module.css'
 
-import Phone from '../../public/images/Phonenobg.png';
-import timetable from '../../public/images/timetable.png';
+import { cn } from '@/lib/utils'
+export default function StudentApp() {
 
-const StudentApp: React.FC = () => {
   return (
-    <div className='flex h-[85%] px-4'>
-      <div className='h-full my-auto flex w-1/3 justify-center'>
+    <div className={styles.gridmain}>
+      <div className={cn(styles.gridmobile, " relative")}>
         <Image
-          src={Phone}
-          alt='phone display'
-          layout='responsive'
-          className='w'
+          src="/images/ams.png"
+          alt="Description of Image"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          objectFit="contain" // Ensures image scales correctly and doesn't overflow
+          quality={90}
+          priority={true}
         />
       </div>
-
-      <div className='h-full w-2/3 flex-col justify-between px-8 text-white'>
-        <div className='flex h-1/2 w-full gap-16 py-4'>
-          <div className='flex h-full w-3/5 items-center rounded-3xl border-2 border-gray-500'>
-            <div className='my-auto w-1/2 text-center text-3xl'>
-              Your class time-table on the go
-            </div>
-            <div className='flex h-full w-1/2'>
-              <NextImage
-                src={timetable}
-                alt='timetable'
-                layout='responsive'
-                width={250}
-                height={100}
-                className='my-auto'
-              />
-            </div>
+      <div className={styles.gridsub}>
+        <div className={cn(styles.gridone, "rounded-3xl border-2 border-gray-500")}>
+          <div className="grid-one-sub1 px-2 text-2xl text-white flex justify-center items-center text-right">
+            Your lecture schedule on the go.
           </div>
-          <div className='w-2/5 rounded-3xl border-2 border-gray-500'>hi</div>
+          <div className="grid-one-sub2 relative">
+            <Image
+              src="/images/timetable.svg"
+              alt="Description of Image"
+              fill
+              objectFit="contain"  // Ensures image scales correctly and doesn't overflow
+              className="absolute inset-0 px-2 max-sm:py-2"
+            />
+          </div>
         </div>
-        <div className='flex h-1/2 w-full gap-16 py-4'>
-          <div className='w-1/4 rounded-3xl border-2 border-gray-500'>hi</div>
-          <div className='w-3/4 rounded-3xl border-2 border-gray-500'>hi</div>
+        <div className={cn(styles.gridtwo, "flex flex-col rounded-3xl border-2 border-gray-500")}>
+          <div className='relative flex-1'>
+            <Image
+              src="/images/microsoft.svg"
+              alt="Description of Image"
+              fill
+              objectFit="contain"  // Ensures image scales correctly and doesn't overflow
+              className="absolute inset-0 px-2 max-sm:pt-2"
+            />
+          </div>
+          <div className="grid-two-sub1 px-6 py-2 lg:py-6 text-2xl text-white flex justify-center items-center">
+            Integrated with your favourite Microsoft apps.
+          </div>
+        </div>
+        <div className={cn(styles.gridthree, "rounded-3xl border-2 border-gray-500")}>
+          <div className="grid-three-sub2 relative">
+            <Image
+              src="/images/datadash.gif"
+              alt="Description of Image"
+              fill
+              objectFit="contain"  // Ensures image scales correctly and doesn't overflow
+              className="absolute -inset-4 px-2 max-sm:py-2 scale-125"
+            />
+          </div>
+          <div className="grid-three-sub1 px-2 lg:pr-12 text-2xl text-white flex justify-center items-center text-right">
+            Real time attendance and grade accesibility.
+          </div>
         </div>
       </div>
     </div>
-  );
-};
-
-export default StudentApp;
+  )
+}
