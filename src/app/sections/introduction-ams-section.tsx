@@ -25,7 +25,7 @@ export default function IntroductionAms() {
         <p>Introducing</p>
       </div>
       <h1 className='h-100 w-3/4 flex-1 sm:px-5 text-center text-5xl sm:text-6xl md:text-8xl  text-white'>
-        Student Lifecycle Management
+        Administrative Management
       </h1>
     </motion.section>
   );

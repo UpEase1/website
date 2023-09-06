@@ -4,9 +4,14 @@ import React from 'react'
 import styles from '@/styles/sla-section.module.css'
 
 import { cn } from '@/lib/utils'
+
+
 export default function StudentApp() {
 
   return (
+    <>
+    {/* <NavbarBlack /> */}
+
     <div className={styles.gridmain}>
       <div className={cn(styles.gridmobile, " relative")}>
         <Image
@@ -64,5 +69,6 @@ export default function StudentApp() {
         </div>
       </div>
     </div>
+    </>
   )
 }
