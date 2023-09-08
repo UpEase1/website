@@ -9,7 +9,7 @@ import NavbarBlack from '@/components/Navbarblack'
 export default function StudentApp() {
 
   return (
-    <>
+    <div>
       <NavbarBlack />
       <div className={styles.gridmain}>
         <div className={cn(styles.gridmobile, " relative")}>
@@ -68,6 +68,6 @@ export default function StudentApp() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }

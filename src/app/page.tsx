@@ -25,26 +25,26 @@ export default function HomePage() {
       <Head>
         <title>UpEase</title>
       </Head>
-      <section>
+      <section id='upease-section-1'>
         <Hero />
       </section>
       <div className='spacer' style={{ height: '100vh' }}></div>
-      <section className='bg-black '>
+      <section className='bg-black ' id='upease-section-2'>
         <IntroductionSla />
       </section>
-      <section className='bg-black'>
+      <section className='bg-black' id='upease-section-3'>
         <StudentApp />
       </section>
-      <section className='bg-black '>
+      <section className='bg-black ' id='upease-section-4'>
         <IntroductionAms />
       </section>
-      <section className='bg-black'>
+      <section className='bg-black' id='upease-section-5'>
         <AmsPlatform />
       </section>
-      <section className='bg-gradient-to-b from-[#F2F2F2] to-white '>
-        <Pricing />
+      <section className='bg-gradient-to-b from-[#F2F2F2] to-white ' id='upease-section-6'>
+        <Pricing />s
       </section>
-      <section className='bg-white'>
+      <section className='bg-white' id='upease-section-7'>
         <Contact />
       </section>
     </main>
