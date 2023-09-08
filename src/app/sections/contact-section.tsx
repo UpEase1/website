@@ -6,16 +6,16 @@ import { cn } from '@/lib/utils';
 
 export default function Contact() {
   return (
-    <div className='flex min-h-screen flex-col'>
+    <div className='flex lg:min-h-screen flex-col'>
       <div className='layout flex flex-col lg:flex-row flex-1 justify-between'>
         <div>
-          <h1 className='mt-64 text-center text-5xl '>
+          <h1 className='mt-32 sm:mt-64 text-5xl '>
             Let's{' '}
             <span className='text-[var(--color-primary-600)]'>Connect</span>
           </h1>
         </div>
 
-        <div className="card flex-shrink-0 w-full max-w-md border border-slate-800 -bottom-16 bg-white ">
+        <div className="card flex-shrink-0 w-full max-w-md border border-slate-800 -bottom-16 my-6 bg-white ">
           <div className="card-body gap-6">
             <h2 className='my-6'>Contact Us</h2>
             <div className="form-control">

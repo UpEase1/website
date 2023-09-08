@@ -9,7 +9,7 @@ interface PricingTierProps {
 
 const PricingTier: React.FC<PricingTierProps> = ({ title, price, features, pricefor }) => {
   return (
-    <div className=' lg:h-[560px] lg:w-80 md:w-full md:h-80  w-72 h-[460px] cursor-pointer rounded-2xl shadow-2xl duration-500 hover:scale-105 flex flex-col md:flex-row lg:flex-col'>
+    <div className=' lg:h-[560px] lg:w-80 md:w-full md:h-80  w-72 h-[460px] cursor-pointer rounded-2xl shadow-2xl max-md:border duration-500 hover:scale-105 flex flex-col md:flex-row lg:flex-col'>
       <div className='h-1/2 lg:h-1/2 md:h-full rounded-2xl lg:w-full md:w-1/3 bg-white'>
         <h3 className='p-4 text-center lg:text-2xl text-[#0A49D6] '>{title}</h3>
         <p className='ml-2 mt-10 p-2'>
