@@ -53,7 +53,7 @@
   }
 }
 
-@media (max-width: 638px) {
+@media (max-width: 640px) {
   .gridmain {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 1.6fr;

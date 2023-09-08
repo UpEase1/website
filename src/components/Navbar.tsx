@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Navbar = () => {
@@ -32,27 +33,27 @@ const Navbar = () => {
               className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow'
             >
               <li>
-                <a>Products</a>
+                <Link href="#upease-section-2">Products</Link>
                 <ul className='p-2'>
                   <li>
-                    <a>Submenu 1</a>
+                    <Link href="#upease-section-3">SLCM</Link>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <Link href="#upease-section-5">AMS</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a>Pricing</a>
+                <Link href="#upease-section-6">Pricing</Link>
               </li>
               <li>
-                <a>Contact Us</a>
+                <Link href="#upease-section-7">Contact Us</Link>
               </li>
             </ul>
           </div>
-          <a className='btn btn-ghost text-xl normal-case text-[var(--color-primary-600)]'>
+          <Link href="#" className='btn btn-ghost text-xl normal-case text-[var(--color-primary-600)]'>
             UpEase
-          </a>
+          </Link>
         </div>
         <div className='navbar-end hidden md:flex'>
           <ul className='menu menu-horizontal px-1'>
@@ -61,19 +62,19 @@ const Navbar = () => {
                 <summary>Products</summary>
                 <ul className='p-2'>
                   <li>
-                    <a href='/StudentApp'>Student App</a>
+                    <Link href='#upease-section-3'>Student App</Link>
                   </li>
                   <li>
-                    <a>AMS Platform</a>
+                    <Link href="#upease-section-5">AMS Platform</Link>
                   </li>
                 </ul>
               </details>
             </li>
             <li>
-              <a>Pricing</a>
+              <Link href="#upease-section-6">Pricing</Link>
             </li>
             <li>
-              <a>Contact Us</a>
+              <Link href="#upease-section-7">Contact Us</Link>
             </li>
           </ul>
         </div>
