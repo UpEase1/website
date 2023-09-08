@@ -4,9 +4,13 @@ import React from 'react'
 import styles from '@/styles/ams-section.module.css'
 
 import { cn } from '@/lib/utils'
+
+import NavbarBlack from '@/components/Navbarblack'
 export default function StudentApp() {
 
   return (
+    <>
+    <NavbarBlack />
     <div className={styles.gridmain}>
       <div className={cn(styles.gridmobile, " relative")}>
         <Image
@@ -64,5 +68,6 @@ export default function StudentApp() {
         </div>
       </div>
     </div>
+    </>
   )
 }

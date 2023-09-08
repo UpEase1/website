@@ -5,12 +5,14 @@ import styles from '@/styles/sla-section.module.css'
 
 import { cn } from '@/lib/utils'
 
+import NavbarBlack from '@/components/Navbarblack'
+
 
 export default function StudentApp() {
 
   return (
     <>
-    {/* <NavbarBlack /> */}
+    <NavbarBlack />
 
     <div className={styles.gridmain}>
       <div className={cn(styles.gridmobile, " relative")}>
